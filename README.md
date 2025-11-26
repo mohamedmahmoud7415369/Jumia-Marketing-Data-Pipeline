@@ -1,5 +1,5 @@
 #  Jumia Marketing Data Pipeline
-<img width="1200" height="630" alt="image" src="https://github.com/user-attachments/assets/f978e982-321c-47f3-88bf-88652a6a4ddc" />
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/f978e982-321c-47f3-88bf-88652a6a4ddc" />
 
 **Automated end-to-end data pipeline for Jumia Egypt marketplace analytics**
 
