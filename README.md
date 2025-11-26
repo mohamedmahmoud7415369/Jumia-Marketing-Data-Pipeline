@@ -19,7 +19,6 @@
 - [Project Structure](#project-structure)
 - [Usage Guide](#usage-guide)
 - [Documentation](#documentation)
-- [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
 
 ---
