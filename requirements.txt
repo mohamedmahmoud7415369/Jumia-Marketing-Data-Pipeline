@@ -2,7 +2,5 @@ pandas
 selenium
 beautifulsoup4
 duckdb
-streamlit
-plotly
 openpyxl
 webdriver-manager
