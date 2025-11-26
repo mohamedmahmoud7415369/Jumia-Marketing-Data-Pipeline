@@ -1,4 +1,5 @@
-# 📊 Jumia Marketing Data Pipeline
+#  Jumia Marketing Data Pipeline
+<img width="1200" height="630" alt="image" src="https://github.com/user-attachments/assets/f978e982-321c-47f3-88bf-88652a6a4ddc" />
 
 **Automated end-to-end data pipeline for Jumia Egypt marketplace analytics**
 
@@ -298,55 +299,6 @@ dag = DAG(
 
 ---
 
-## 🐛 Troubleshooting
-
-### Services Won't Start
-
-```bash
-# Check Docker status
-docker-compose ps
-
-# View logs
-docker-compose logs
-
-# Restart specific service
-docker-compose restart airflow-webserver
-```
-
-### DAG Not Appearing
-
-```bash
-# Check for syntax errors
-docker-compose exec airflow-scheduler airflow dags list
-
-# View scheduler logs
-docker-compose logs airflow-scheduler
-```
-
-### Scraping Fails
-
-```bash
-# Verify Selenium is running
-docker-compose ps selenium
-
-# Check Selenium logs
-docker-compose logs selenium
-
-# Access Selenium VNC viewer
-# URL: http://localhost:7900 (password: secret)
-```
-
-### Database Issues
-
-```bash
-# Recreate database
-rm data/jumia_warehouse.duckdb
-docker-compose exec airflow-webserver python /opt/airflow/src/create_schema.py
-
-# Check database
-docker-compose exec airflow-webserver python -c "import duckdb; print(duckdb.connect('data/jumia_warehouse.duckdb').execute('SELECT COUNT(*) FROM fact_product_daily').fetchone())"
-```
-
 ### Complete Reset
 
 ```bash
@@ -415,10 +367,10 @@ This project is for educational purposes. Please respect Jumia's terms of servic
 
 ## 👨‍💻 Author
 
-**Data Engineering Team**  
+**Mohamed Mahmoud**  
 ITI - Information Technology Institute  
-Dr. Eman - EDA Course
-
+**Supervised BY**
+Dr. Eman Rasslan - EDA Course
 ---
 
 ## 🙏 Acknowledgments
@@ -427,15 +379,6 @@ Dr. Eman - EDA Course
 - Selenium WebDriver team
 - DuckDB developers
 - Streamlit creators
-
----
-
-## 📞 Support
-
-- **Documentation:** See `Docs/` directory
-- **Issues:** Check `TASKS.md` for known issues
-- **Logs:** `docker-compose logs [service-name]`
-
 ---
 
 **Last Updated:** 2025-11-26  
