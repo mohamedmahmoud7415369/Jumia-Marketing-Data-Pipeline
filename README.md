@@ -256,11 +256,6 @@ docker-compose exec airflow-webserver streamlit run /opt/airflow/dashboard/app.p
    - Error handling patterns
    - Performance optimization
 
-3. **[dashboard/README.md](dashboard/README.md)**
-   - Dashboard features
-   - Customization guide
-   - Troubleshooting
-
 4. **[TASKS.md](TASKS.md)**
    - Project roadmap
    - Feature backlog
